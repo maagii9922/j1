@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    maaa welcome
+    
+    <p style="{{data.0.name}}:{{data.0.code}};">{{data.0.name}}</p>
+    <p style="{{data.1.name}}:{{data.1.code}};">{{data.1.name}}</p>
+    <table style="width:100%">
+        <tr>
+          <th>id</th>
+          <th>name</th>
+          <th>code</th>
+        </tr>
+        {% for b in data %}
+        <tr style="{{b.name}}:{{b.code}};">
+            <td>{{b.id}}</td>
+            <td>{{b.name}}</td>
+            <td>{{b.code}}</t>
+          </tr>
+        {% endfor%}
+    </table>
+ 
+</body>
+</html>
